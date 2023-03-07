@@ -1,4 +1,4 @@
-## Anastasia Mazur
+# Anastasia Mazur
 ## Contacts
 * Location: Minsk, Belarus
 * Phone: +375 29 163-98-75
