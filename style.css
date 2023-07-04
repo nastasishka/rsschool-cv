@@ -48,12 +48,19 @@ img{vertical-align: top;}
    margin: 0 auto;
 }
 
+html {
+   scroll-behavior: smooth;
+ }
+
 body {
    font-family: Raleway;
+   font-weight: normal;
    line-height: 1.2;
    font-size: 18px;
    color: #E2E6EE;
 }
+
+/* HEADER START */
 
 .header {
    background: #312163;
@@ -112,3 +119,99 @@ body {
 .header__logo-pic {
    max-height: 50px;
 }
+
+/* HEADER END */
+
+/* MAIN START */
+
+.main__wrapper {
+   display: flex;
+   flex-wrap: wrap;
+   height: 100vh;
+}
+
+.leftpart {
+   padding-top: 30px;
+   width: 40%;
+   background: url(./assets/Background\ gradient.png);
+}
+
+.rightpart {
+   background: #2E2E48;
+   width: 60%;
+}
+
+.rightpart__wrapper {
+   max-width: 720px;
+   margin: 0;
+   margin-right: auto;
+}
+
+/* MAIN END */
+
+/* PROFILE START */
+
+.profile__photo {
+   justify-content: center;
+   display: flex;
+}
+
+.profile__photo-pic:hover {
+   cursor: pointer;
+   transform: scale(1.08);
+   border-radius: 30%;
+}
+
+.profile__photo-pic {
+   max-height: 230px;
+   border-radius: 50%;
+   border: solid 3px #F7F9FC;
+   transition: .4s;
+}
+
+.profile__text {
+   text-align: center;
+}
+
+h1, h2 {
+   font-family: Abril Fatface;
+   font-weight: normal;
+   line-height: 1.8;
+}
+
+.profile__title {
+   font-size: 38px;
+}
+
+/* PROFILE END */
+
+/* CONTACTS START */
+
+.contacts, .languages {
+   padding-top: 40px;
+   max-width: 440px;
+   margin: 0;
+   margin-left: auto;
+}
+
+.contacts__title, .languages__title {
+   display: flex;
+   margin-bottom: 15px;
+}
+
+.contacts__photo, .languages__photo {
+   max-width: 40px;
+   margin-right: 15px;
+}
+
+.contacts__list {
+   line-height: 1.5;
+}
+
+/* CONTACTS END */
+
+/* LANGUAGES START */
+
+
+
+/* LANGUAGES END */
