@@ -1,0 +1,114 @@
+/* Google fonts start */
+
+@import url(https://fonts.googleapis.com/css?family=Abril+Fatface:regular);
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+/* Google fonts end /* 
+
+/* Обнуление */
+
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*, *:before, *:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus, :active{outline: none;}
+a:focus, a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html, body{
+	height: 100%;
+	width: 100%;
+	font-style: 100%;
+	line-height: 1;
+	font-style: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea{font-family: inherit;}
+
+input::-ms-clear{display:none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style-type: none;}
+img{vertical-align: top;}
+
+.wrapper {
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+body {
+   font-family: Raleway;
+   line-height: 1.2;
+   font-size: 18px;
+   color: #E2E6EE;
+}
+
+.header {
+   background: #312163;
+   padding: 10px 0;
+}
+
+.header__wrapper {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.header__list {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.header__item {
+   margin-right: 40px;
+}
+
+.header__item:last-child {
+   margin-right: 0;
+}
+
+.header__link {
+   color: #E2E6EE;
+   line-height: 24px;
+   font-family: Abril Fatface;
+   transition: .3s;
+   position: relative;
+}
+
+.header__link:active, .header__link:focus, .header__link:hover {
+   color: #F7F9FC;
+}
+
+.header__link::before {
+	content: '';
+	position: absolute;
+	left: 0; bottom: -5px;
+	width: 0;
+	height: 1.5px;
+	background-color: #F7F9FC;
+}
+
+.header__link:hover:before, .header__link:active:before, .header__link:focus:before {
+	width: 100%;
+}
+
+.header__link::before {
+	transition: width 0.4s;
+}
+
+.header__logo-pic {
+   max-height: 50px;
+}
